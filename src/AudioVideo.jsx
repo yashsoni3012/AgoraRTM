@@ -63,10 +63,10 @@ export default function RtcCall() {
       }),
     });
 
-    const { channel, token, uid } = await res.json();
+    const { channel, token, id } = await res.json();
 
     const client = clientRef.current;
-    await client.join(APP_ID, channel, token, Number(uid));
+    await client.join(APP_ID, channel, token, Number(id));
 
     // 🟢 LOCAL TRACKS
     const audioTrack = await AgoraRTC.createMicrophoneAudioTrack();
