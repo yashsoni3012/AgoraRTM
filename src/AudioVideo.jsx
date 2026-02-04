@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import AgoraRTC from "agora-rtc-sdk-ng";
 
 const APP_ID = "aacc38a143f04f4a95f3182c502ce32f";
-const TOKEN_API = "https://celebstalks.pythonanywhere.com/chat/";
+const TOKEN_API = "https://celebstalks.pythonanywhere.com/abcd/";
 
 export default function RtcCall() {
   const clientRef = useRef(null);
