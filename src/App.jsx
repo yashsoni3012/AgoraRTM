@@ -1,5 +1,5 @@
 import Chat from "./Chat";
-import AudioVideo from "./AudioVideo"; 
+import AudioVideo from "./Video"; 
 import { BrowserRouter as Router,Routes,Route,Link } from "react-router-dom";
 
 function App() {
