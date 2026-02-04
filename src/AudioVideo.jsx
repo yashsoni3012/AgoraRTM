@@ -63,8 +63,10 @@ export default function RtcCall() {
       }),
     });
 
-    const { channel, token, id } = await res.json();
+    let data = await res.json();
+    let { channel, token, id }  = data;
 
+    console.log("Res:", data);
     const client = clientRef.current;
     await client.join(APP_ID, channel, token, Number(id));
 
